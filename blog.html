@@ -88,7 +88,7 @@
             background-image: none;
             background-color: white;
             border-radius: 13px;
-            margin-left: 10px;
+            
         }
         #ema {
             padding: 12px;
@@ -97,6 +97,10 @@
         }
         #yu {
             text-shadow: 1px 1px 1px white;
+        }
+        .subs {
+            display: flex;
+            gap: 10px;
         }
     </style>
 </head>
@@ -144,8 +148,10 @@
                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSf6b1pBQ9EhQ7wnm7ou2A1cweW8xdq0o8GilsfD_mX0NJfCSw/formResponse" method="POST"
                     target="hidden_iframe"
                     onsubmit="setTimeout(()=>{ window.location.reload(); }, 500);">
-                    <input type="email" name="entry.538822340" id="ema">
-                    <button type="submit">Subscribe</button>
+                    <div class="subs">
+                        <input type="email" name="entry.538822340" id="ema">
+                        <button type="submit">Subscribe</button>
+                    </div>
                 </form>
 
                 
