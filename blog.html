@@ -72,11 +72,28 @@
             margin-left: 70px;
         }
         .email {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 300px;
+            width:fit-content;
+            margin: auto;
             border: 1px solid black;
+            padding: 15px;
+            padding-left: 170px;
+            padding-right: 300px;
+            border-radius: 12px;
+            padding-bottom: 30px;
+            background-image: url("https://i.pinimg.com/736x/9a/19/5c/9a195c2f5a61bb0fb6708eb7200dd88f.jpg");
+        }
+        button {
+            font-size: large;
+            padding: 10px;
+            background-image: none;
+            background-color: white;
+            border-radius: 13px;
+            margin-left: 10px;
+        }
+        #ema {
+            padding: 12px;
+            background-image: none;
+            border-radius: 13px;
         }
         
     </style>
@@ -125,7 +142,7 @@
                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSf6b1pBQ9EhQ7wnm7ou2A1cweW8xdq0o8GilsfD_mX0NJfCSw/formResponse" method="POST"
                     target="hidden_iframe"
                     onsubmit="setTimeout(()=>{ window.location.reload(); }, 500);">
-                    <input type="email" name="entry.538822340" id="email">
+                    <input type="email" name="entry.538822340" id="ema">
                     <button type="submit">Subscribe</button>
                 </form>
 
