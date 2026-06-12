@@ -116,7 +116,7 @@
             align-items: center;
             gap: 8px;
             padding: 10px;
-            transition: 0.3s;
+            transition: 0.3s ease;
         }
         .gith img {
             width: 30px;
@@ -127,6 +127,12 @@
         .gith:hover {
             
             transform: scale(1.10) translateY(-5px);
+        }
+
+        .gith:active {
+            transition: 0.1s;
+            transform: scale(0.95) translateY(5px);
+            
         }
 
         .think {
