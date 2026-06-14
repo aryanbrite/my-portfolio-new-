@@ -242,6 +242,10 @@
             gap: 10px;
         }
 
+        #img1 {
+            width: fit-content;
+        }
+
         @media (max-width:1179px){
             .get{
                 flex-direction: column;
