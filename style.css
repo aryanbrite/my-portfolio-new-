@@ -246,6 +246,15 @@
             width: fit-content;
         }
 
+        ul {
+            line-height: 1.9;
+        }
+
+        li {
+            margin-bottom: 30px;
+        }
+
+
         @media (max-width:1179px){
             .get{
                 flex-direction: column;
