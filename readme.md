@@ -24,7 +24,7 @@
 > GitHub Copilot was accidentally opened twice while trying to use Emmet abbreviations in VS Code. The suggestions were immediately closed, no code was accepted, and no AI-generated code was used in this project.
 
 > [!NOTE]
-> Most of the website content was Copy-Pasted from my previous portfolio. Therefore, content-writing is least. The About section and the Daily message was written specifically for this version, so that time is recorded..
+> Most of the website content was Copy-Pasted from my previous portfolio. Therefore, content-writing time recorded is least. The About section and the Daily message was written specifically for this version, so that time is recorded..
 
 ## Screenshot
 ![screenshot](assets/ss.png)
@@ -73,4 +73,4 @@ I made this using only custom css. No tailwind/frameworks and components
 
 Made with love, bad decisions, and way too much free time.
 
-© MIT - Aryan Brite
+© [MIT License](LICENSE) - Aryan Brite
