@@ -91,18 +91,21 @@ a::selection
             background-color: 	#ffd519c4;
             text-shadow: none;
         }
+        @media (max-width:517px){
+            .main {
+            margin-left: 6% ;
+            margin-right: 6%;
+            }
+        }
 
 
          /* Blog CSS */
-        #grp {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
-
+        
         .mind {
-            display: flex;
-            align-items:start;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            
         }
         #imga {
             width:450px
@@ -116,6 +119,17 @@ a::selection
         }
         .imggrp img {
             height: 200px;
+
+        }
+
+        @media(max-width:1293px){
+            .mind {display: block;}
+            #grp {
+            display: flex;
+            overflow-y: auto;
+            gap: 10px;
+            padding-bottom: 10px;
+            }
 
         }
 
@@ -219,12 +233,14 @@ a::selection
 </ul>
 
 <p>So, the entire Jewel Changi Airport expriance is going to take to around 1–1.5 hours unless you shop</p>
-<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ae/25/c0/canopy-park.jpg" alt="">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM7Su9ry5cZKe9dmbVlXzFs2C8byZX8bYPHw&s" alt="">
-<img src="https://cdn-imgix.headout.com/media/images/1eeb2d46-503a-418e-b4e4-512ad8bd973f-1754027861031-297958.jpg?auto=compress%2Cformat&w=900&h=562.5&q=90&ar=16%3A10&crop=faces%2Ccenter&" alt="">
-<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/90/47/85/caption.jpg" alt="">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbSb8Qkdz1a71rHb6_zv-HC1I0Zfb6ZRJmRUB5UrJZRQWw_-TtUGhl6g9ItdgJc_oS-qjghUzW9q_6Pc6tZm-bfFGiRE2R4dxShaA4j3ysOqilpe3UCJXQvOSirGjqHjm4Y04D/s1407/02+BBK_2144+Canopy+Park+-+Comprising+Discovery+Slides%252C+Foggy+Bowls%252C+Topiary+Walk+and+Petal+Garden+%2540+Jewel+Changi+Airport+%255BSingapore%255D.JPG" alt="">
-<img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/13/17/af/c5.jpg" alt="">
+<div class="imggrp">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ae/25/c0/canopy-park.jpg" alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM7Su9ry5cZKe9dmbVlXzFs2C8byZX8bYPHw&s" alt="">
+    <img src="https://cdn-imgix.headout.com/media/images/1eeb2d46-503a-418e-b4e4-512ad8bd973f-1754027861031-297958.jpg?auto=compress%2Cformat&w=900&h=562.5&q=90&ar=16%3A10&crop=faces%2Ccenter&" alt="">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/90/47/85/caption.jpg" alt="">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbSb8Qkdz1a71rHb6_zv-HC1I0Zfb6ZRJmRUB5UrJZRQWw_-TtUGhl6g9ItdgJc_oS-qjghUzW9q_6Pc6tZm-bfFGiRE2R4dxShaA4j3ysOqilpe3UCJXQvOSirGjqHjm4Y04D/s1407/02+BBK_2144+Canopy+Park+-+Comprising+Discovery+Slides%252C+Foggy+Bowls%252C+Topiary+Walk+and+Petal+Garden+%2540+Jewel+Changi+Airport+%255BSingapore%255D.JPG" alt="">
+    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/13/17/af/c5.jpg" alt="">
+</div>
                 <h2>Transporation
                 </h2>
                 <p>We will be using Singapore's MRT AKA the metro line</p>
