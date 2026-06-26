@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn.hackclub.com/019ebadc-fc40-739e-9e9f-366c6b1a25ad/favicon-32x32.png">
+    <title>Blog</title>
+    <style>
+        section {
+            margin-top: 50px;
+        
+        }
+        body {
+            background-color: #fefae031;
+            background-image:url("https://cdn.hackclub.com/019eba81-597a-7910-8f11-101af9f625a7/Untitled%20design%20(23).png");
+
+            margin-bottom: 150px;
+        }
+
+        .main {
+            margin-left: 11% ;
+            margin-right: 11%;
+            margin-top: 47px;
+        }
+
+        q,p
+         {
+            font-size:large;
+        }
+        q::selection,
+        p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+a::selection
+
+ {
+            background-color: rgb(255, 202, 28);
+            color: rgb(0, 0, 0);
+        }
+
+        nav {
+            display: flex;
+            
+
+            gap: 20px;
+            justify-content: right;
+            margin-right: 7%;
+          
+        }
+        nav a {
+            text-decoration: 0;
+            color: black;
+            margin-top: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: 0.2s;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            border-bottom-color: black;
+        }
+
+        q, p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h3,h4 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .content {
+            margin-left: 7%;
+            margin-right: 7%;
+        }
+        .headi{
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+            justify-content: center;
+            
+        }
+        q,p {
+            line-height: 1.7;
+        }
+        .highlight {
+            background-color: 	#ffd519c4;
+            text-shadow: none;
+        }
+
+        q {
+            border-left: 3px solid rgb(121, 121, 121);
+            padding-left: 6px;
+            font-style: italic;
+        }
+
+        @media (max-width:517px){
+            .main {
+            margin-left: 6% ;
+            margin-right: 6%;
+            }
+        }
+        #updated {
+            color: rgb(65, 65, 65);
+            text-align: right;
+            font-style: italic;
+            margin-top: 100px;
+        }
+
+
+         /* Blog CSS */
+        
+        
+
+        .mind {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            
+        }
+        #imga {
+            width:450px
+        }
+
+        .imggrp {
+            display: flex;
+            overflow-y: auto;
+            gap: 10px;
+            padding-bottom: 10px;
+        }
+        .imggrp img {
+            height: 200px;
+
+        }
+        .link {
+            color: rgb(255, 66, 8);
+        }
+
+        @media(max-width:1293px){
+            .mind {display: block;}
+            #grp {
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+            }
+            #grp img {
+                    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 10px auto;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../gallery.html">Gallery</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../Daily.html
+">Daily</a>
+    </nav>
+    <div class="main">
+        <div class="headi">
+            <h1 style="margin-bottom: 60px;">
+                How to write a good README ?
+            </h1>
+            <p>June 26 2026</p>
+        </div>
+        <div class="content">
+                <!-- blog -->
+                 <p>Hi, You are probably here because your project was rejected due to a bad README. <br> Its fine, We are all learning. </p>
+                 <q>Is my project rejected because the length of my README is too short ?</q>
+                 <p>You might interpret this after reading the rejection feedback. But that's not the issue ! 
+                    READMEs are supposed to be to the point.
+                 </p>
+                 <q>huh ?</q>
+                 <p>Yeh, When we say that the README is a bit short or not detailed enough. We mean that the README is not 
+                    matching the OSS standards. <br> Open Source Software aka OSS projects should have a README which is detailed enough enough so that if any person from any place in the world, lands on your GitHub repositorysitory. They should easily be able to understand a lot about the repository </p>
+                <p><span class="highlight">READMEs are supposed to make a newbie understand what this repository actually is.</span> <br> So, whenever you are writing your README. Ask this question to yourself.</p>
+                <p>Is this README enough to make a newbie familiar with this project ?</p>
+                <q>So, How to make a readme like this ?</q>
+                <p>Its easy, there are some good practices that you should follow while writing a new README </p>
+                <h3>Always try to include these sections in your readme :</h3>
+                <ul>
+                    <li>
+                        <p>Title of the project</p>
+                    </li>
+                    <li>
+                        <p>Screenshot (optional if its just a OSS project, Some hackclub YSWS might require you to add this tho)</p>
+                    </li>
+                    <li>
+                        <p>Motivation (optional) : Why are you making this project ?</p>
+                    </li>
+                    <li>
+                        <p>Features : What are some cool thins in this project ?</p>
+                    </li>
+                    <li>
+                        <p>Installation : How can somone run this project in his own pc locally ?</p>
+                    </li>
+                    <li>
+                        <p>
+                            LICENCE : Which licence does this project use ? MIT LICENCE is usually reccomended.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Copyright : Who owns or maintains the project ? You usually write "made with love by [NAME]" here.
+                        </p>
+                    </li>
+
+                </ul>
+                <h3> You can also make your Readme look more beatuiful by: </h3>
+                <ul>
+                    <li>
+                        <p>Adding the logo of the project</p>
+                    </li>
+                    <li>
+                        <p>Adding badges</p>
+                    </li>
+                    <li>
+                        <p>or using some animatied SVGs or GIFs in the readme.</p>
+                    </li>
+                </ul>
+                <h3>Examples of some good READMEs</h3>
+                <p>You should refer to this <a class="link" href="https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc">simple readme template</a> </p>
+                <p>You can use your own imagination to write a good README. You can refer this <a class="link" href="https://github.com/aryanbrite/my-portfolio-new-">template</a> <span class="highlight">made by me</span> !</p>
+                <h3>How to write READMEs</h3>
+                <p>to make a readme make a file called <span class="highlight">README.md</span> in your repository root. Notice the ".md" in the file, That's <span class="highlight">Markdown</span></p>
+                <q>What's Markdown ?</q>
+                <p>Markdown is a lightweight markup language used to format plain text. Instead of using complex code or a visual editor (like Microsoft Word), it uses simple keyboard symbols (like asterisks or hashtags) to make text bold, create lists, or build headers, which are then easily converted into web-ready HTML.</p>
+                <q>How to write Markdown ?</q>
+                <p>This is a great <a class="link" href="https://www.markdownguide.org/cheat-sheet/">Guide</a> About Markdown. It will take you 3 minutes to learn the markdown language. </p>
+                 <h3>Some tools That will help</h3>
+                 <ul>
+                    <li> <p> <a class="link" href="https://markdownlivepreview.com/">Markdown Previewer</a></p></li>
+                    <li><p> <a class="link" href="https://readme.so/">Markdown writer</a> : Please dont use this tho. </p></li>
+                
+                 </ul>
+                 <p>Finally, I am concluding this guide.</p>
+                 <!-- blog-end -->
+                 <p id="updated" >Last Updated: June 26, 2026 <br>
+                    Did you know, That I write all my blogs in 100% custom css without any framework.
+                 </p>
+        </div>
+    </div>
+</body>
+</html>

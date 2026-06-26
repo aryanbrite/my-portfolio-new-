@@ -23,9 +23,10 @@
             margin-top: 47px;
         }
 
-        p {
+        q,p {
             font-size:large;
         }
+        q::selection,
         p::selection,
 h1::selection,
 h2::selection,
@@ -62,7 +63,7 @@ a::selection
             border-bottom-color: black;
         }
 
-        p {
+        q,p {
             font-family: Arial, Helvetica, sans-serif;
         }
         h1 {
@@ -85,12 +86,15 @@ a::selection
             justify-content: center;
             
         }
-        p {
+        q,p {
             line-height: 1.7;
         }
         .highlight {
             background-color: 	#ffd519c4;
             text-shadow: none;
+        }
+        .link {
+            color: rgb(255, 66, 8);
         }
         @media (max-width:517px){
             .main {
@@ -121,6 +125,13 @@ a::selection
         .imggrp img {
             height: 200px;
 
+        }
+
+        #updated {
+            color: rgb(65, 65, 65);
+            text-align: right;
+            font-style: italic;
+            margin-top: 100px;
         }
 
         @media(max-width:1293px){
@@ -255,6 +266,9 @@ a::selection
                 <p>We will be using Singapore's MRT AKA the metro line</p>
                 <img style="width: 70%;" src="https://www.lta.gov.sg/content/dam/ltagov/getting_around/public_transport/rail_network/image/SM_20250704_BI.png" alt="Singapore metro line">
                 <!-- blog-end -->
+                 <p id="updated" >Last Updated: June 26, 2026 <br>
+                    Did you know, That I write all my blogs in 100% custom css without any framework.
+                 </p>
         </div>
     </div>
 </body>
