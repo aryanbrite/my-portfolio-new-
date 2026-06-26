@@ -73,4 +73,4 @@ I made this using only custom css. No tailwind/frameworks and components
 
 Made with love, bad decisions, and way too much free time.
 
-© [MIT License](LICENSE) - Aryan Brite
+© [The MIT LIcense](LICENSE) - Aryan Brite
